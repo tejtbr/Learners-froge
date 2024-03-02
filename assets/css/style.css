@@ -914,15 +914,19 @@ body {
     background-color: var(--eerie-black-2);
     color: var(--gray-x-11);
     font-size: var(--fs-5);
+    overflow: hidden;
 }
 
 .footer-top {
     display: grid;
     gap: 30px;
+    max-width: 90%;
+    overflow: hidden;
 }
 
 .footer-brand-text {
     margin-block: 20px;
+    max-width: 90%;
 }
 
 .footer-brand .wrapper {
