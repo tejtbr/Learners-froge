@@ -956,6 +956,7 @@ body {
 
 .newsletter-form {
     margin-block: 20px 35px;
+    flex-direction: column;
 }
 
 .newsletter-form .input-field {
@@ -964,6 +965,7 @@ body {
     border-radius: var(--radius-5);
     margin-block-end: 20px;
     width: auto;
+    min-width: 100%;
 }
 
 .newsletter-form .btn {

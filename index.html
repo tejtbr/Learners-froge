@@ -990,24 +990,50 @@
               Enter your email address to enquire
             </p>
 
-            <form class="newsletter-form"
-              onsubmit="openDefaultEmailClient(event)">
-              <input name="message" id="message" placeholder="Your message"
+            <form class="newsletter-form">
+              <input type="text" name="name" id="name" placeholder="Your name"
                 required class="input-field">
-              <button type="submit" class="btn has-before">
+              <input type="email" name="email" id="email"
+                placeholder="Your email" required class="input-field">
+              <textarea name="message" id="message" rows="4" cols="50"
+                placeholder="Your message" required
+                class="input-field"></textarea>
+              <button type="submit" class="btn has-before"
+                onclick="sendMessage(event)">
                 <span class="span">Send</span>
                 <ion-icon name="arrow-forward-outline"
                   aria-hidden="true"></ion-icon>
               </button>
             </form>
 
+            <script
+              src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
             <script>
-                        function openDefaultEmailClient(event) {
-                            event.preventDefault(); // Prevent the form from submitting normally
-                            const message = document.getElementById('message').value;
-                            const subject = "Message from your website";
-                            const mailtoLink = "mailto:tejtbr@gmail.com";
-                            window.open(mailtoLink); // Open default mail client with pre-filled email
+                        (function() {
+                            emailjs.init({
+                                publicKey: "g-OThjIYhue2YVjpy",
+                            });
+                        })();
+
+                        function sendMessage(event) {
+                            event.preventDefault(); // Prevent default form submission
+
+                            let arr = {
+                                name: document.querySelector("#name").value,
+                                email: document.querySelector("#email").value,
+                                message: document.querySelector("#message").value,
+                            };
+
+                            emailjs.send("service_f97l6ij", "template_k8cze8a", arr)
+                                .then(function(response) {
+                                    console.log("SUCCESS!", response.status, response.text);
+                                    alert("Message sent successfully!");
+                                    // You can redirect the user or perform any other action upon successful submission
+                                })
+                                .catch(function(error) {
+                                    console.log("FAILED...", error);
+                                    alert("Message sending failed. Please try again later.");
+                                });
                         }
                     </script>
 
