@@ -965,11 +965,18 @@ body {
     border-radius: var(--radius-5);
     margin-block-end: 20px;
     width: auto;
-    min-width: 100%;
+    min-width: 70%;
+    max-width: 90%;
+}
+
+.newsletter .message {
+    min-width: 70%;
+    max-width: 90%;
 }
 
 .newsletter-form .btn {
-    min-width: 100%;
+    min-width: 70%;
+    max-width: 90%;
     justify-content: center;
 }
 
