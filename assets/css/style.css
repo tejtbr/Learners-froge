@@ -969,9 +969,8 @@ body {
     max-width: 90%;
 }
 
-.newsletter .message {
-    min-width: 70%;
-    max-width: 90%;
+#message {
+    max-width: 70%;
 }
 
 .newsletter-form .btn {
