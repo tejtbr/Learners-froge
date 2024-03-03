@@ -12,4 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
     document.querySelector(".popup").style.display = "block";
   }, 5000); // Show the popup after 5 seconds
+
+  // Add event listener to close the popup when clicking outside of it
+  document.querySelector(".popup").addEventListener("click", function (event) {
+    if (event.target.classList.contains("popup")) {
+      closePopup();
+    }
+  });
 });
