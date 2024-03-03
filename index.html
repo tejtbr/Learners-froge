@@ -25,6 +25,7 @@
     - custom css link
   -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/popup.css">
 
     <!-- 
     - google font link
@@ -54,6 +55,29 @@
     <!-- 
     - #HEADER
   -->
+
+    <!-- this for pop up-->
+    <div class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>Enter your details</h2>
+        <input type="text" class="input-field" id="name" placeholder="Name">
+        <input type="text" class="input-field" id="mobile"
+          placeholder="Mobile Number">
+        <input type="email" class="input-field" id="email"
+          placeholder="Email Address">
+        <button class="butto" onclick="submitForm()">
+          <a href="#courses" class="btn has-before">
+            <span class="span">Submit</span>
+
+            <ion-icon name="arrow-forward-outline"
+              aria-hidden="true"></ion-icon>
+          </a>
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
 
     <header class="header" data-header>
       <div class="container">
@@ -127,11 +151,10 @@
           -->
           <ul class="social-icons">
             <li><a href="https://www.instagram.com/learners_froge/"
-                class="instagram"><i
-                  class="fab fa-instagram"></i></a></li>
-            <!--<li><a href="#" class="linkedin"><i
-                  class="fab fa-linkedin-in"></i></a></li>
-             Add more social media icons as needed -->
+                class="telegram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://t.me/+__uOTAQ6R2JjNDk1" class="telegram"><i
+                  class="fab fa-telegram"></i></a></li>
+            <!-- Add more social media icons as needed -->
           </ul>
 
           <button class="header-action-btn" aria-label="open menu"
