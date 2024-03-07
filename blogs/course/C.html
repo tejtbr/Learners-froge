@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Course Dashboard</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .banner {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .banner-title {
+            margin: 0;
+        }
+        
+        .section-title {
+            margin-top: 0;
+        }
+        
+        .topic-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .topic {
+            margin-bottom: 10px;
+        }
+        
+        .additional-info {
+            margin-top: 40px;
+        }
+        
+        .info-text {
+            font-style: italic;
+        }
+        
+        .scroll-top-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+        
+        .scroll-top-button:hover {
+            background-color: #0056b3;
+        }
+        
+        .scroll-top-button svg {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <header class="banner">
+            <div class="container">
+                <h1 class="banner-title">Course Dashboard</h1>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <section class="topics">
+                    <h2 class="section-title">All Topics</h2>
+                    <ul class="topic-list">
+                        <li class="topic">Introduction to C Language</li>
+                        <li class="topic">Variables and Data Types</li>
+                        <li class="topic">Control Structures</li>
+                        <li class="topic">Functions</li>
+                        <li class="topic">Arrays and Pointers</li>
+                        <li class="topic">File Handling</li>
+                        <!-- Add more topics as needed -->
+                    </ul>
+                </section>
+
+                <section class="additional-info">
+                    <h2 class="section-title">Additional Information</h2>
+                    <p class="info-text">Here you can find additional resources
+                        and information about the course.</p>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <button class="scroll-top-button" onclick="scrollToTop()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                        d="M12 2L2 12h5v8h4v-6h2v6h4v-8h5L12 2zm0 5.17L16.17 9H7.83L12 7.17z" />
+                </svg>
+            </button>
+        </footer>
+
+        <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+    </body>
+
+</html>

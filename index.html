@@ -119,10 +119,10 @@
               <a href="#courses" class="navbar-link" data-nav-link>Courses</a>
             </li>
 
-            <li class="navbar-item">
+            <!-- <li class="navbar-item">
               <a href="blogs/index.html" class="navbar-link"
                 data-nav-link>Blog</a>
-            </li>
+            </li> -->
 
             <li class="navbar-item">
               <a href="#goo" class="navbar-link" data-nav-link>Contact</a>
@@ -433,7 +433,7 @@
             <ul class="grid-list">
 
               <li>
-                <div class="course-card">
+                <div class="course-card" id="htmlcourseokay">
 
                   <figure class="card-banner img-holder"
                     style="--width: 370; --height: 220;">
@@ -498,7 +498,7 @@
               </li>
 
               <li>
-                <div class="course-card">
+                <div class="course-card" id="csscourseokay">
 
                   <figure class="card-banner img-holder"
                     style="--width: 370; --height: 220;">
@@ -563,7 +563,7 @@
               </li>
 
               <li>
-                <div class="course-card">
+                <div class="course-card" id="jscourseokay">
 
                   <figure class="card-banner img-holder"
                     style="--width: 370; --height: 220;">
@@ -627,7 +627,7 @@
                 </div>
               </li>
               <li>
-                <div class="course-card">
+                <div class="course-card" id="ccourseokay">
 
                   <figure class="card-banner img-holder"
                     style="--width: 370; --height: 220;">
@@ -746,6 +746,240 @@
           </div>
         </section>
 
+        <!-- this is for course pop -->
+
+        <!-- c program  -->
+        <div id="htmlCoursePopup" class="custom-popup">
+          <div class="custom-popup-content">
+            <span class="custom-close" id="closeHTMLCoursePopup">&times;</span>
+            <h2>HTML Course</h2>
+            <h3>Introduction to HTML</h3>
+            <p>This course provides an introduction to HTML, including basic
+              syntax, tags, and structure.</p>
+            <p>Prerequisites: None</p>
+            <h3>Concepts You Will Learn</h3>
+            <table>
+              <tr>
+                <th>Topic</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>HTML Tags</td>
+                <td>Understanding various HTML tags</td>
+              </tr>
+              <tr>
+                <td>HTML Structure</td>
+                <td>Learn about the basic structure of HTML documents</td>
+              </tr>
+              <tr>
+                <td>HTML Forms</td>
+                <td>Creating forms using HTML</td>
+              </tr>
+              <tr>
+                <td>HTML Semantics</td>
+                <td>Understanding HTML5 semantics</td>
+              </tr>
+            </table>
+            <h3>Outcomes</h3>
+            <p>By the end of this course, you will be able to create static web
+              pages using HTML.</p>
+            <button class="buttontoget" id="getHTMLCourse">Get the
+              Course</button>
+          </div>
+        </div>
+
+        <div id="cssCoursePopup" class="custom-popup">
+          <div class="custom-popup-content">
+            <span class="custom-close" id="closeCSSCoursePopup">&times;</span>
+            <h2>CSS Course</h2>
+            <h3>Introduction to CSS</h3>
+            <p>This course provides an introduction to CSS, including basic
+              syntax, selectors, and properties.</p>
+            <p>Prerequisites: Basic understanding of HTML</p>
+            <h3>Concepts You Will Learn</h3>
+            <table>
+              <tr>
+                <th>Topic</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>CSS Selectors</td>
+                <td>Understanding different CSS selectors</td>
+              </tr>
+              <tr>
+                <td>CSS Box Model</td>
+                <td>Learn about the CSS box model</td>
+              </tr>
+              <tr>
+                <td>CSS Flexbox</td>
+                <td>Understanding CSS Flexbox layout</td>
+              </tr>
+              <tr>
+                <td>CSS Grid</td>
+                <td>Learn about CSS Grid layout</td>
+              </tr>
+            </table>
+            <h3>Outcomes</h3>
+            <p>By the end of this course, you will be able to style web pages
+              using CSS effectively.</p>
+            <button class="buttontoget" id="getCSSCourse">Get the
+              Course</button>
+          </div>
+        </div>
+
+        <div id="jsCoursePopup" class="custom-popup">
+          <div class="custom-popup-content">
+            <span class="custom-close" id="closeJSCoursePopup">&times;</span>
+            <h2>JavaScript Course</h2>
+            <h3>Introduction to JavaScript</h3>
+            <p>This course provides an introduction to JavaScript, including
+              basic syntax, data types, and control structures.</p>
+            <p>Prerequisites: Basic understanding of HTML and CSS</p>
+            <h3>Concepts You Will Learn</h3>
+            <table>
+              <tr>
+                <th>Topic</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>Variables and Data Types</td>
+                <td>Understanding variables and different data types in
+                  JavaScript
+                </td>
+              </tr>
+              <tr>
+                <td>Control Structures</td>
+                <td>Learn about loops and conditional statements</td>
+              </tr>
+              <tr>
+                <td>Functions</td>
+                <td>Creating and using functions in JavaScript</td>
+              </tr>
+              <tr>
+                <td>DOM Manipulation</td>
+                <td>Manipulating the Document Object Model (DOM) using
+                  JavaScript
+                </td>
+              </tr>
+            </table>
+            <h3>Outcomes</h3>
+            <p>By the end of this course, you will be able to create dynamic and
+              interactive web pages using JavaScript.</p>
+            <button class="buttontoget" id="getJSCourse">Get the Course</button>
+          </div>
+        </div>
+        <div id="cProgrammingCoursePopup" class="custom-popup">
+          <div class="custom-popup-content">
+            <span class="custom-close"
+              id="closeCProgrammingCoursePopup">&times;</span>
+            <h2>C Programming Course</h2>
+            <h3>Introduction to C Programming</h3>
+            <p>This course provides an introduction to the C programming
+              language, including basic syntax, data types, and control
+              structures.
+            </p>
+            <p>Prerequisites: Basic understanding of programming concepts</p>
+            <h3>Concepts You Will Learn</h3>
+            <table>
+              <tr>
+                <th>Topic</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td>Data Types</td>
+                <td>Understanding different data types in C</td>
+              </tr>
+              <tr>
+                <td>Control Structures</td>
+                <td>Learn about loops and conditional statements</td>
+              </tr>
+              <tr>
+                <td>Functions</td>
+                <td>Creating and using functions in C</td>
+              </tr>
+              <tr>
+                <td>Pointers</td>
+                <td>Understanding the concept of pointers</td>
+              </tr>
+            </table>
+            <h3>Outcomes</h3>
+            <p>By the end of this course, you will be able to write basic
+              programs in C and understand fundamental programming concepts.</p>
+            <button class="buttontoget" id="getCProgrammingCourse">Get the
+              Course</button>
+          </div>
+        </div>
+        <script>
+                document.getElementById("htmlcourseokay").addEventListener("click", function() {
+                    document.getElementById("htmlCoursePopup").style.display = "block";
+                });
+
+                document.getElementById("closeHTMLCoursePopup").addEventListener("click", function() {
+                    document.getElementById("htmlCoursePopup").style.display = "none";
+                });
+
+                document.getElementById("getHTMLCourse").addEventListener("click", function() {
+                    document.getElementById("htmlCoursePopup").style.display = "none";
+                });
+
+                document.getElementById("csscourseokay").addEventListener("click", function() {
+                    document.getElementById("cssCoursePopup").style.display = "block";
+                });
+
+                document.getElementById("closeCSSCoursePopup").addEventListener("click", function() {
+                    document.getElementById("cssCoursePopup").style.display = "none";
+                });
+
+                document.getElementById("getCSSCourse").addEventListener("click", function() {
+                    document.getElementById("cssCoursePopup").style.display = "none";
+                });
+
+                document.getElementById("jscourseokay").addEventListener("click", function() {
+                    document.getElementById("jsCoursePopup").style.display = "block";
+                });
+
+                document.getElementById("closeJSCoursePopup").addEventListener("click", function() {
+                    document.getElementById("jsCoursePopup").style.display = "none";
+                });
+
+                document.getElementById("getJSCourse").addEventListener("click", function() {
+                    document.getElementById("jsCoursePopup").style.display = "none";
+                });
+
+                document.getElementById("ccourseokay").addEventListener("click", function() {
+                    document.getElementById("cProgrammingCoursePopup").style.display = "block";
+                });
+
+                document.getElementById("closeCProgrammingCoursePopup").addEventListener("click", function() {
+                    document.getElementById("cProgrammingCoursePopup").style.display = "none";
+                });
+
+                document.getElementById("getCProgrammingCourse").addEventListener("click", function() {
+                    document.getElementById("cProgrammingCoursePopup").style.display = "none";
+                });
+
+                window.addEventListener("click", function(event) {
+                    var htmlCoursePopup = document.getElementById("htmlCoursePopup");
+                    var cssCoursePopup = document.getElementById("cssCoursePopup");
+                    var jsCoursePopup = document.getElementById("jsCoursePopup");
+                    var cProgrammingCoursePopup = document.getElementById("cProgrammingCoursePopup");
+                    if (event.target == htmlCoursePopup) {
+                        htmlCoursePopup.style.display = "none";
+                    }
+                    if (event.target == cssCoursePopup) {
+                        cssCoursePopup.style.display = "none";
+                    }
+                    if (event.target == jsCoursePopup) {
+                        jsCoursePopup.style.display = "none";
+                    }
+                    if (event.target == cProgrammingCoursePopup) {
+                        cProgrammingCoursePopup.style.display = "none";
+                    }
+                });
+            </script>
+
+        <!-- ths is for html  -->
+
         <!-- 
         - #STATE
       -->
@@ -800,7 +1034,7 @@
         - #BLOG
       -->
 
-        <section class="section blog has-bg-image" id="blog" aria-label="blog"
+        <!-- <section class="section blog has-bg-image" id="blog" aria-label="blog"
           style="background-image: url('./assets/images/blog-bg.svg')">
           <div class="container">
 
@@ -871,7 +1105,7 @@
               loading="lazy" alt class="shape blog-shape">
 
           </div>
-        </section>
+        </section> -->
 
       </article>
     </main>
