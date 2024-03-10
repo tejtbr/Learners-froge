@@ -956,6 +956,7 @@ body {
     position: relative;
     /* Ensure content is stacked above the overlay */
     z-index: 1;
+    padding: 10px 40px;
     /* Ensure content is stacked above the overlay */
 }
 
