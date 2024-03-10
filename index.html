@@ -124,7 +124,8 @@
             </li>
 
             <li class="navbar-item">
-              <a href="#goo" class="navbar-link" data-nav-link>Contact</a>
+              <a href="assets/contact/contact.html" class="navbar-link"
+                data-nav-link>Contact</a>
             </li>
 
           </ul>
@@ -1049,46 +1050,49 @@
     - #FOOTER
   -->
 
-    <footer class="footer" id="goo"
+    <!-- <footer class="footer" id="goo"
       style="background-image: url('./assets/images/footer-bg.png')">
 
       <div class="footer-top section">
         <div class="container grid-list">
 
           <div class="footer-brand">
+            <spam id="11">
 
-            <a href="#" class="logo">
-              <img src="./assets/images/logooo.png" width="162" height="50"
-                alt="EduWeb logo">
-            </a>
+              <a href="#" class="logo">
+                <img src="./assets/images/logooo.png" width="162" height="50"
+                  alt="EduWeb logo">
+              </a>
 
-            <p class="footer-brand-text">
-              Committed to empowering individuals through accessible skill
-              development. We're dedicated to fostering growth in every learner.
-            </p>
+              <p class="footer-brand-text">
+                Committed to empowering individuals through accessible skill
+                development. We're dedicated to fostering growth in every
+                learner.
+              </p>
+            </spam>
 
             <!--<div class="wrapper">
               <span class="span">Add:</span>
 
               <address class="address">70-80 Upper St Norwich NR2</address>
             </div>-->
+    <!-- <spam id="22">
 
-            <div class="wrapper">
-              <span class="span">Call:</span>
+        <div class="wrapper">
+            <span class="span">Call:</span>
 
-              <a href="tel:+011234567890" class="footer-link">+91 7975577162</a>
-            </div>
+            <a href="tel:+011234567890" class="footer-link">+91
+                  7975577162</a>
+        </div>
 
-            <div class="wrapper">
-              <span class="span">Email:</span>
+        <div class="wrapper">
+            <span class="span">Email:</span>
 
-              <a href="mailto:info@eduweb.com"
-                class="footer-link">tplacements2@gmail.com</a>
-            </div>
+            <a href="mailto:info@eduweb.com" class="footer-link">tplacements2@gmail.com</a>
+        </div>
+    </spam> -->
 
-          </div>
-
-          <!--<ul class="footer-list">
+    <!--<ul class="footer-list">
 
             <li>
               <p class="footer-list-title">Online Platform</p>
@@ -1151,90 +1155,39 @@
             </li>
 
           </ul>-->
+    <!-- 
+            <div class="footer-list">
 
-          <div class="footer-list">
+              <ul class="social-list">
 
-            <p class="footer-list-title">Contacts</p>
-
-            <p class="footer-list-text">
-              Enter your email address to enquire
-            </p>
-
-            <form class="newsletter-form">
-              <input type="text" name="name" id="name" placeholder="Your name"
-                required class="input-field">
-              <input type="email" name="email" id="email"
-                placeholder="Your email" required class="input-field">
-              <textarea name="message" id="message" rows="4" cols="50"
-                placeholder="Your message" required
-                class="input-field"></textarea>
-              <button type="submit" class="btn has-before"
-                onclick="sendMessage(event)">
-                <span class="span">Send</span>
-                <ion-icon name="arrow-forward-outline"
-                  aria-hidden="true"></ion-icon>
-              </button>
-            </form>
-
-            <script
-              src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-            <script>
-                        (function() {
-                            emailjs.init({
-                                publicKey: "g-OThjIYhue2YVjpy",
-                            });
-                        })();
-
-                        function sendMessage(event) {
-                            event.preventDefault(); // Prevent default form submission
-
-                            let arr = {
-                                name: document.querySelector("#name").value,
-                                email: document.querySelector("#email").value,
-                                message: document.querySelector("#message").value,
-                            };
-
-                            emailjs.send("service_f97l6ij", "template_k8cze8a", arr)
-                                .then(function(response) {
-                                    console.log("SUCCESS!", response.status, response.text);
-                                    alert("Message sent successfully!");
-                                    // You can redirect the user or perform any other action upon successful submission
-                                })
-                                .catch(function(error) {
-                                    console.log("FAILED...", error);
-                                    alert("Message sending failed. Please try again later.");
-                                });
-                        }
-                    </script>
-
-            <ul class="social-list">
-
-              <!-- <li>
+                <!-- <li>
                 <a href="#" class="social-link">
                   <ion-icon name="logo-linkedin"></ion-icon>
                 </a>
               </li> -->
 
-              <li><a href="https://www.instagram.com/learners_froge/"
-                  class="social-link"><i class="fab fa-instagram"></i></a></li>
-              <li><a href="https://t.me/+__uOTAQ6R2JjNDk1"
-                  class="social-link"><i
-                    class="fab fa-telegram"></i></a></li>
+    <!-- <li><a href="https://www.instagram.com/learners_froge/"
+                    class="social-link"><i
+                      class="fab fa-instagram"></i></a></li>
+                <li><a href="https://t.me/+__uOTAQ6R2JjNDk1"
+                    class="social-link"><i
+                      class="fab fa-telegram"></i></a></li> -->
 
-              <!-- <li>
+    <!-- <li>
                 <a href="#" class="social-link">
                   <ion-icon name="logo-twitter"></ion-icon>
                 </a>
               </li> -->
 
-            </ul>
+    <!-- </ul>
 
+            </div>
           </div>
 
         </div>
-      </div>
+      </div> -->
 
-      <div class="footer-bottom">
+    <!-- <div class="footer-bottom">
         <div class="container">
 
           <p class="copyright">
@@ -1243,8 +1196,33 @@
           </p>
 
         </div>
-      </div>
+      </div> -->
 
+    <!-- </footer>   -->
+
+    <footer class="custom-footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="assets/images/logooo.png" alt="Company Logo"
+              class="footer-logo-img">
+          </div>
+          <div class="footer-info">
+            <p class="footer-slogan">Empowering Education, Enriching Lives</p>
+            <div class="contact-info">
+              <p><i class="fas fa-phone"></i> Phone: +91 7975577162</p>
+              <p><i class="far fa-envelope"></i> Email: tplacements2@gmail.com
+              </p>
+            </div>
+          </div>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/learners_froge/"
+              class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me/+__uOTAQ6R2JjNDk1" class="social-icon"><i
+                class="fab fa-telegram"></i></a>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- 

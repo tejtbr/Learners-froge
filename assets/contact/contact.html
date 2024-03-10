@@ -22,7 +22,7 @@
     - custom css link
   -->
         <link rel="stylesheet" href="../../assets/css/style.css">
-        <link rel="stylesheet" href="career.css">
+        <link rel="stylesheet" href="contact.css">
         <link rel="stylesheet" href="../../assets/css/popup.css">
 
         <!-- 
@@ -131,8 +131,8 @@
                         </li>
 
                         <li class="navbar-item">
-                            <a href="../contact/contact.html"
-                                class="navbar-link" data-nav-link>Contact</a>
+                            <a href="#goo" class="navbar-link"
+                                data-nav-link>Contact</a>
                         </li>
 
                     </ul>
@@ -184,39 +184,63 @@
             </div>
         </header>
 
-        <section class="careers-hero">
-            <div class="careers-hero-overlay"></div>
-            <div class="careers-hero-content">
-                <h1 class="careers-hero-title">Join Our Team</h1>
-                <p class="careers-hero-subtitle">Explore exciting career
-                    opportunities with us</p>
-                <a href="#" class="btn careers-hero-btn">View Openings</a>
+        <section class="contact-section">
+            <div class="container">
+                <h2 class="contact-title">Get in Touch</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name"
+                            placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email"
+                            placeholder="Enter your email address" required>
+                    </div>
+                    <div class="form-groupp">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" cols="40"
+                            placeholder="Enter your message"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn has-before"
+                        onclick="sendMessage(event)">Send
+                    </button>
+                </form>
             </div>
         </section>
 
-        <section class="job-openings">
-            <div class="containerr">
-                <div class="job-card">
-                    <img src="campus.jpg" alt="Job Image" class="job-image">
-                    <div class="job-details">
-                        <h2 class="job-title">Campus Ambassador</h2>
-                        <p class="job-location">Location: Remote</p>
-                        <p class="job-type">Type: Part-time</p>
-                        <a href="#" class="btn job-apply-btn">Apply Now</a>
-                    </div>
-                </div>
-                <div class="job-description">
-                    <h2 class="job-description-title">Join Our Team as a Campus
-                        Ambassador
-                    </h2>
-                    <p class="job-description-subtitle">Make an impact on your
-                        campus!
-                    </p>
-                    <p
-                        class="job-description-text">"Become a Campus Ambassador and amplify your leadership skills while making a meaningful impact on your campus. Receive training, support, and flexibility to excel in your role, and join us in empowering and inspiring students."</p>
-                </div>
-            </div>
-        </section>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script>
+        (function() {
+            emailjs.init({
+                publicKey: "g-OThjIYhue2YVjpy",
+            });
+        })();
+
+        function sendMessage(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            let arr = {
+                name: document.querySelector("#name").value,
+                email: document.querySelector("#email").value,
+                message: document.querySelector("#message").value,
+            };
+
+            emailjs.send("service_f97l6ij", "template_k8cze8a", arr)
+                .then(function(response) {
+                    console.log("SUCCESS!", response.status, response.text);
+                    alert("Message sent successfully!");
+                    // You can redirect the user or perform any other action upon successful submission
+                })
+                .catch(function(error) {
+                    console.log("FAILED...", error);
+                    alert("Message sending failed. Please try again later.");
+                });
+        }
+    </script>
 
         <!-- ths is for html  -->
 

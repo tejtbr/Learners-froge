@@ -919,14 +919,21 @@ body {
 
 .footer-top {
     display: grid;
-    gap: 30px;
-    max-width: 90%;
+    gap: 100rem;
+    min-width: 90%;
     overflow: hidden;
 }
 
 .footer-brand-text {
     margin-block: 20px;
-    max-width: 90%;
+    width: 100%;
+    min-width: 90%;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
 }
 
 .footer-brand .wrapper {
@@ -1522,4 +1529,53 @@ body {
     color: #000000;
     cursor: pointer;
     font-size: large;
+}
+
+
+/* footer */
+
+
+/* Footer Section Styles */
+
+.custom-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-logo .footer-logo-img {
+    width: 100px;
+}
+
+.footer-slogan {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.social-icons .social-icon {
+    color: #fff;
+    font-size: 24px;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons .social-icon:hover {
+    color: #ff6b6b;
 }
