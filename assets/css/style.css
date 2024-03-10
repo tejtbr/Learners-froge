@@ -1579,3 +1579,46 @@ body {
 .social-icons .social-icon:hover {
     color: #ff6b6b;
 }
+
+
+/* banner */
+
+
+/* Banner Section Styles */
+
+.banner {
+    background-color: #f9f9f9;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.banner-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.banner-title {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.banner-description {
+    font-size: 21px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.banner-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.banner-button:hover {
+    background-color: #0056b3;
+}
