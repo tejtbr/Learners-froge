@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- 
+    - primary meta tag
+  -->
+        <title>Learners Forge </title>
+        <meta name="title" content="Learners froge">
+
+        <!-- 
+    - favicon
+  -->
+        <link rel="shortcut icon" href="../../assets/images/logooooo.png"
+            type="image/svg+xml">
+
+        <!-- 
+    - custom css link
+  -->
+        <link rel="stylesheet" href="../../assets/css/style.css">
+        <link rel="stylesheet" href="coursestyle.css">
+        <link rel="stylesheet" href="../../assets/css/popup.css">
+
+        <!-- 
+    - google font link
+  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+            rel="stylesheet">
+
+        <!-- 
+    - preload images
+  -->
+        <link rel="preload" as="image" href="../../assets/images/hero-bg.svg">
+        <link rel="preload" as="image"
+            href="../../assets/images/hero-banner-1.jpg">
+        <link rel="preload" as="image"
+            href="../../assets/images/hero-banner-2.jpg">
+        <link rel="preload" as="image"
+            href="../../assets/images/hero-shape-1.svg">
+        <link rel="preload" as="image"
+            href="../../assets/images/hero-shape-2.png">
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    </head>
+
+    <body id="top">
+
+        <!-- 
+    - #HEADER
+  -->
+
+        <!-- this for pop up-->
+        <!-- <div class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>Enter your details</h2>
+        <form method="post">
+          <input type="text" class="input-field" name="name" id="namee"
+            placeholder="Name">
+          <input type="text" class="input-field" name="mobile" id="mobile"
+            placeholder="Mobile Number">
+          <input type="email" class="input-field" name="email" id="emaill"
+            placeholder="Email Address">
+          <button class="butto" onclick="submitForm()">
+            <a href="#" class="btn has-before">
+              <span class="span">Submit</span>
+
+              <ion-icon name="arrow-forward-outline"
+                aria-hidden="true"></ion-icon>
+            </a>
+          </button>
+        </form>
+
+      </div>
+    </div> -->
+
+        <!-- <script src="script.js"></script> -->
+
+        <header class="header" data-header>
+            <div class="container">
+
+                <a href="#" class="logo">
+                    <img src="../../assets/images/logos .png" width="162"
+                        height="50" alt="EduWeb logo">
+                </a>
+
+                <nav class="navbar" data-navbar>
+
+                    <div class="wrapper">
+                        <a href="#" class="logo">
+                            <img src="../../assets/images/logos .png"
+                                width="162" height="50" alt="EduWeb logo">
+                        </a>
+
+                        <button class="nav-close-btn" aria-label="close menu"
+                            data-nav-toggler>
+                            <ion-icon name="close-outline"
+                                aria-hidden="true"></ion-icon>
+                        </button>
+                    </div>
+
+                    <ul class="navbar-list">
+
+                        <li class="navbar-item">
+                            <a href="../../index.html" class="navbar-link"
+                                data-nav-link>Home</a>
+                        </li>
+
+                        <li class="navbar-item">
+                            <a href="../about/aboutus.html" class="navbar-link"
+                                data-nav-link>About</a>
+                        </li>
+
+                        <li class="navbar-item">
+                            <a href="#" class="navbar-link"
+                                data-nav-link>Courses</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="../career/career.html" class="navbar-link"
+                                data-nav-link>Careers</a>
+                        </li>
+
+                        <li class="navbar-item">
+                            <a href="#goo" class="navbar-link"
+                                data-nav-link>Contact</a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+                <div class="header-actions">
+
+                    <button class="header-action-btn" aria-label="toggle search"
+                        title="Search">
+                        <!--
+              for search icon <ion-icon name="search-outline" aria-hidden="true"></ion-icon>-->
+                    </button>
+
+                    <button class="header-action-btn" aria-label="cart"
+                        title="Cart">
+                        <!--<ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+
+            <span class="btn-badge">0</span>-->
+                    </button>
+                    <!-- 
+          <a href="#" class="btn has-before">
+            <span class="span"> Be in
+              touch</span>
+
+            <ion-icon name="arrow-forward-outline"
+              aria-hidden="true"></ion-icon>
+          </a>
+          -->
+                    <ul class="social-icons">
+                        <li><a href="https://www.instagram.com/learners_froge/"
+                                class="telegram"><i
+                                    class="fab fa-instagram"></i></a></li>
+                        <!-- <li><a href="https://t.me/+__uOTAQ6R2JjNDk1" class="telegram"><i
+                  class="fab fa-telegram"></i></a></li> -->
+                        <!-- Add more social media icons as needed -->
+                    </ul>
+
+                    <button class="header-action-btn" aria-label="open menu"
+                        data-nav-toggler>
+                        <ion-icon name="menu-outline"
+                            aria-hidden="true"></ion-icon>
+                    </button>
+
+                </div>
+
+                <div class="overlay" data-nav-toggler data-overlay></div>
+
+            </div>
+        </header>
+
+        <section class="custom-hero">
+            <div class="hero-overlay"></div>
+            <!-- Overlay for black opacity -->
+            <div class="custom-hero-content">
+                <h1 class="custom-hero-title">Discover Your Next Adventure</h1>
+                <p class="custom-hero-subtitle">Unlock your potential with our
+                    diverse range of courses</p>
+                <a href="#courses" class="custom-hero-btn">Explore Courses</a>
+            </div>
+        </section>
+
+        <!-- 
+        - #COURSE
+      -->
+
+        <section class="section course" id="courses" aria-label="course">
+            <div class="container">
+
+                <p class="section-subtitle">Popular Courses</p>
+
+                <h2 class="h2 section-title">Pick A Course To Get Started</h2>
+
+                <ul class="grid-list">
+
+                    <li>
+                        <div class="course-card" id="htmlcourseokay">
+
+                            <figure class="card-banner img-holder"
+                                style="--width: 370; --height: 220;">
+                                <img src="../../assets/images/course-1.jpg"
+                                    width="370" height="220" loading="lazy"
+                                    alt="Build Responsive Real- World Websites with HTML and CSS"
+                                    class="img-cover">
+                            </figure>
+
+                            <div class="abs-badge">
+                                <ion-icon name="time-outline"
+                                    aria-hidden="true"></ion-icon>
+
+                                <span class="span">2 Weeks</span>
+                            </div>
+
+                            <div class="card-content">
+
+                                <span class="badge">Beginner</span>
+
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">master the
+                                        HTML for
+                                        Beginners</a>
+                                </h3>
+
+                                <div class="wrapper">
+
+                                    <div class="rating-wrapper">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+
+                                    <p class="rating-text">(5.0/7 Rating)</p>
+
+                                </div>
+
+                                <data class="price" value="29">199 Rs</data>
+
+                                <ul class="card-meta-list">
+
+                                    <li class="card-meta-item">
+                                        <ion-icon name="library-outline"
+                                            aria-hidden="true"></ion-icon>
+
+                                        <span class="span">8 Lessons</span>
+                                    </li>
+
+                                    <li class="card-meta-item">
+                                        <ion-icon name="people-outline"
+                                            aria-hidden="true"></ion-icon>
+
+                                        <span class="span">20 Students</span>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="course-card" id="csscourseokay">
+
+                            <figure class="card-banner img-holder"
+                                style="--width: 370; --height: 220;">
+                                <img src="../../assets/images/course-2.jpg"
+                                    width="370" height="220" loading="lazy"
+                                    alt="Java Programming Masterclass for Software Developers"
+                                    class="img-cover">
+                            </figure>
+
+                            <div class="abs-badge">
+                                <ion-icon name="time-outline"
+                                    aria-hidden="true"></ion-icon>
+
+                                <span class="span">8 Weeks</span>
+                            </div>
+
+                            <div class="card-content">
+
+                                <span class="badge">Beginner</span>
+
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">master the
+                                        CSS for
+                                        Beginner</a>
+                                </h3>
+
+                                <div class="wrapper">
+
+                                    <div class="rating-wrapper">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+
+                                    <p class="rating-text">(4.5 /9 Rating)</p>
+
+                                </div>
+
+                                <data class="price" value="49">199 Rs</data>
+
+                                <ul class="card-meta-list">
+
+                                    <li class="card-meta-item">
+                                        <ion-icon name="library-outline"
+                                            aria-hidden="true"></ion-icon>
+
+                                        <span class="span">15 Lessons</span>
+                                    </li>
+
+                                    <li class="card-meta-item">
+                                        <ion-icon name="people-outline"
+                                            aria-hidden="true"></ion-icon>
+
+                                        <span class="span">35 Students</span>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="course-card" id="jscourseokay">
+
+                            <figure class="card-banner img-holder"
+                                style="--width: 370; --height: 220;">
+                                <img src="../../assets/images/course-3.jpg"
+                                    width="370" height="220" loading="lazy"
+                                    alt="The Complete Camtasia Course for Content Creators"
+                                    class="img-cover">
+                            </figure>
+
+                            <div class="abs-badge">
+                                <ion-icon name="time-outline"
+                                    aria-hidden="true"></ion-icon>
+
+                                <span class="span">3 Weeks</span>
+                            </div>
+
+                            <div class="card-content">
+
+                                <span class="badge">Intermediate</span>
+
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">basics of
+                                        javascript for
+                                        web development</a>
+                                </h3>
+
+                                <div class="wrapper">
+
+                                    <div class="rating-wrapper">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+
+                                    <p class="rating-text">(4.9 /7 Rating)</p>
+
+                                </div>
+
+                                <data class="price" value="35">199 Rs</data>
+
+                                <ul class="card-meta-list">
+
+                                    <li class="card-meta-item">
+                                        <ion-icon name="library-outline"
+                                            aria-hidden="true"></ion-icon>
+
+                                        <span class="span">13 Lessons</span>
+                                    </li>
+
+                                    <li class="card-meta-item">
+                                        <ion-icon name="people-outline"
+                                            aria-hidden="true"></ion-icon>
+
+                                        <span class="span">18 Students</span>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-card" id="ccourseokay">
+
+                            <figure class="card-banner img-holder"
+                                style="--width: 370; --height: 220;">
+                                <img src="../../assets/images/course-3.jpg"
+                                    width="370" height="220" loading="lazy"
+                                    alt="The Complete Camtasia Course for Content Creators"
+                                    class="img-cover">
+                            </figure>
+
+                            <div class="abs-badge">
+                                <ion-icon name="time-outline"
+                                    aria-hidden="true"></ion-icon>
+
+                                <span class="span">3 Weeks</span>
+                            </div>
+
+                            <div class="card-content">
+
+                                <span class="badge">Beginner</span>
+
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">basics of
+                                        C</a>
+                                </h3>
+
+                                <div class="wrapper">
+
+                                    <div class="rating-wrapper">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+
+                                    <p class="rating-text">(4.9 /7 Rating)</p>
+
+                                </div>
+
+                                <data class="price" value="35">199 Rs</data>
+
+                                <ul class="card-meta-list">
+
+                                    <li class="card-meta-item">
+                                        <ion-icon name="library-outline"
+                                            aria-hidden="true"></ion-icon>
+
+                                        <span class="span">13 Lessons</span>
+                                    </li>
+
+                                    <li class="card-meta-item">
+                                        <ion-icon name="people-outline"
+                                            aria-hidden="true"></ion-icon>
+
+                                        <span class="span">30 Students</span>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-card" id="ccourseokay">
+
+                            <figure class="card-banner img-holder"
+                                style="--width: 370; --height: 220;">
+                                <img src="../../assets/images/course/comm.jpg"
+                                    width="370" height="220" loading="lazy"
+                                    alt="The Complete Camtasia Course for Content Creators"
+                                    class="img-cover">
+                            </figure>
+
+                            <div class="abs-badge">
+                                <ion-icon name="time-outline"
+                                    aria-hidden="true"></ion-icon>
+
+                                <span class="span">3 Weeks</span>
+                            </div>
+
+                            <div class="card-content">
+
+                                <span class="badge">Beginner</span>
+
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Master the
+                                        art of public speaking</a>
+                                </h3>
+                                <h6>In this course, you will learn Public
+                                    Speaking and Presentation skills that will
+                                    help you to influence your audience. This
+                                    course could be used by any individual who
+                                    wishes to create an impact while presenting.
+                                </h6>
+
+                                <div class="wrapper">
+
+                                    <div class="rating-wrapper">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+
+                                    <p class="rating-text">(4.9 /7 Rating)</p>
+
+                                </div>
+
+                                <data class="price" value="35">199 Rs</data>
+
+                                <ul class="card-meta-list">
+
+                                    <li class="card-meta-item">
+                                        <ion-icon name="library-outline"
+                                            aria-hidden="true"></ion-icon>
+
+                                        <span class="span">13 Lessons</span>
+                                    </li>
+
+                                    <li class="card-meta-item">
+                                        <ion-icon name="people-outline"
+                                            aria-hidden="true"></ion-icon>
+
+                                        <span class="span">30 Students</span>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="course-card" id="ccourseokay">
+
+                            <figure class="card-banner img-holder"
+                                style="--width: 370; --height: 220;">
+                                <img src="../../assets/images/course/spe.jpg"
+                                    width="370" height="220" loading="lazy"
+                                    alt="The Complete Camtasia Course for Content Creators"
+                                    class="img-cover">
+                            </figure>
+
+                            <div class="abs-badge">
+                                <ion-icon name="time-outline"
+                                    aria-hidden="true"></ion-icon>
+
+                                <span class="span">3 Weeks</span>
+                            </div>
+
+                            <div class="card-content">
+
+                                <span class="badge">Beginner</span>
+
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Master the
+                                        art of Communication </a>
+                                </h3>
+                                <h6>In this course you will learn about how to
+                                    communicate that really motivate and
+                                    influence people. You will learn why
+                                    listening is important, Verbal & Non-Verbal
+                                    Communication and how to build your
+                                    confidence.
+                                </h6>
+
+                                <div class="wrapper">
+
+                                    <div class="rating-wrapper">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+
+                                    <p class="rating-text">(4.7 /7 Rating)</p>
+
+                                </div>
+
+                                <data class="price" value="35">199 Rs</data>
+
+                                <ul class="card-meta-list">
+
+                                    <li class="card-meta-item">
+                                        <ion-icon name="library-outline"
+                                            aria-hidden="true"></ion-icon>
+
+                                        <span class="span">9 Lessons</span>
+                                    </li>
+
+                                    <li class="card-meta-item">
+                                        <ion-icon name="people-outline"
+                                            aria-hidden="true"></ion-icon>
+
+                                        <span class="span">30 Students</span>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="course-card" id="ccourseokay">
+
+                            <figure class="card-banner img-holder"
+                                style="--width: 370; --height: 220;">
+                                <img src="../../assets/images/course/image.png"
+                                    width="370" height="220" loading="lazy"
+                                    alt="The Complete Camtasia Course for Content Creators"
+                                    class="img-cover">
+                            </figure>
+
+                            <div class="abs-badge">
+                                <ion-icon name="time-outline"
+                                    aria-hidden="true"></ion-icon>
+
+                                <span class="span">5 Weeks</span>
+                            </div>
+
+                            <div class="card-content">
+
+                                <span class="badge">Beginner</span>
+
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Design to
+                                        dominate with canva</a>
+                                </h3>
+                                <h6>In Design to Dominate course you will learn
+                                    how to make professional social media post,
+                                    videos, poster, logo and many more in Canva.
+                                    This course will help you to attract
+                                    potential customers to your businesses with
+                                    your graphic
+                                    designs.
+                                </h6>
+
+                                <div class="wrapper">
+
+                                    <div class="rating-wrapper">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+
+                                    <p class="rating-text">(4.9 /7 Rating)</p>
+
+                                </div>
+
+                                <data class="price" value="35">199 Rs</data>
+
+                                <ul class="card-meta-list">
+
+                                    <li class="card-meta-item">
+                                        <ion-icon name="library-outline"
+                                            aria-hidden="true"></ion-icon>
+
+                                        <span class="span">13 Lessons</span>
+                                    </li>
+
+                                    <li class="card-meta-item">
+                                        <ion-icon name="people-outline"
+                                            aria-hidden="true"></ion-icon>
+
+                                        <span class="span">30 Students</span>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </section>
+
+        <!-- this is for course pop -->
+
+        <!-- c program  -->
+        <div id="htmlCoursePopup" class="custom-popup">
+            <div class="custom-popup-content">
+                <span class="custom-close"
+                    id="closeHTMLCoursePopup">&times;</span>
+                <h2>HTML Course</h2>
+                <h3>Introduction to HTML</h3>
+                <p>This course provides an introduction to HTML, including basic
+                    syntax, tags, and structure.</p>
+                <p>Prerequisites: None</p>
+                <h3>Concepts You Will Learn</h3>
+                <table>
+                    <tr>
+                        <th>Topic</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>HTML Tags</td>
+                        <td>Understanding various HTML tags</td>
+                    </tr>
+                    <tr>
+                        <td>HTML Structure</td>
+                        <td>Learn about the basic structure of HTML documents
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>HTML Forms</td>
+                        <td>Creating forms using HTML</td>
+                    </tr>
+                    <tr>
+                        <td>HTML Semantics</td>
+                        <td>Understanding HTML5 semantics</td>
+                    </tr>
+                </table>
+                <h3>Outcomes</h3>
+                <p>By the end of this course, you will be able to create static
+                    web pages using HTML.</p>
+                <button class="buttontoget" id="getHTMLCourse">Get the
+                    Course</button>
+            </div>
+        </div>
+
+        <div id="cssCoursePopup" class="custom-popup">
+            <div class="custom-popup-content">
+                <span class="custom-close"
+                    id="closeCSSCoursePopup">&times;</span>
+                <h2>CSS Course</h2>
+                <h3>Introduction to CSS</h3>
+                <p>This course provides an introduction to CSS, including basic
+                    syntax, selectors, and properties.</p>
+                <p>Prerequisites: Basic understanding of HTML</p>
+                <h3>Concepts You Will Learn</h3>
+                <table>
+                    <tr>
+                        <th>Topic</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>CSS Selectors</td>
+                        <td>Understanding different CSS selectors</td>
+                    </tr>
+                    <tr>
+                        <td>CSS Box Model</td>
+                        <td>Learn about the CSS box model</td>
+                    </tr>
+                    <tr>
+                        <td>CSS Flexbox</td>
+                        <td>Understanding CSS Flexbox layout</td>
+                    </tr>
+                    <tr>
+                        <td>CSS Grid</td>
+                        <td>Learn about CSS Grid layout</td>
+                    </tr>
+                </table>
+                <h3>Outcomes</h3>
+                <p>By the end of this course, you will be able to style web
+                    pages using CSS effectively.</p>
+                <button class="buttontoget" id="getCSSCourse">Get the
+                    Course</button>
+            </div>
+        </div>
+
+        <div id="jsCoursePopup" class="custom-popup">
+            <div class="custom-popup-content">
+                <span class="custom-close"
+                    id="closeJSCoursePopup">&times;</span>
+                <h2>JavaScript Course</h2>
+                <h3>Introduction to JavaScript</h3>
+                <p>This course provides an introduction to JavaScript, including
+                    basic syntax, data types, and control structures.</p>
+                <p>Prerequisites: Basic understanding of HTML and CSS</p>
+                <h3>Concepts You Will Learn</h3>
+                <table>
+                    <tr>
+                        <th>Topic</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Variables and Data Types</td>
+                        <td>Understanding variables and different data types in
+                            JavaScript
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Control Structures</td>
+                        <td>Learn about loops and conditional statements</td>
+                    </tr>
+                    <tr>
+                        <td>Functions</td>
+                        <td>Creating and using functions in JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td>DOM Manipulation</td>
+                        <td>Manipulating the Document Object Model (DOM) using
+                            JavaScript
+                        </td>
+                    </tr>
+                </table>
+                <h3>Outcomes</h3>
+                <p>By the end of this course, you will be able to create dynamic
+                    and interactive web pages using JavaScript.</p>
+                <button class="buttontoget" id="getJSCourse">Get the
+                    Course</button>
+            </div>
+        </div>
+        <div id="cProgrammingCoursePopup" class="custom-popup">
+            <div class="custom-popup-content">
+                <span class="custom-close"
+                    id="closeCProgrammingCoursePopup">&times;</span>
+                <h2>C Programming Course</h2>
+                <h3>Introduction to C Programming</h3>
+                <p>This course provides an introduction to the C programming
+                    language, including basic syntax, data types, and control
+                    structures.
+                </p>
+                <p>Prerequisites: Basic understanding of programming concepts
+                </p>
+                <h3>Concepts You Will Learn</h3>
+                <table>
+                    <tr>
+                        <th>Topic</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Data Types</td>
+                        <td>Understanding different data types in C</td>
+                    </tr>
+                    <tr>
+                        <td>Control Structures</td>
+                        <td>Learn about loops and conditional statements</td>
+                    </tr>
+                    <tr>
+                        <td>Functions</td>
+                        <td>Creating and using functions in C</td>
+                    </tr>
+                    <tr>
+                        <td>Pointers</td>
+                        <td>Understanding the concept of pointers</td>
+                    </tr>
+                </table>
+                <h3>Outcomes</h3>
+                <p>By the end of this course, you will be able to write basic
+                    programs in C and understand fundamental programming
+                    concepts.
+                </p>
+                <button class="buttontoget" id="getCProgrammingCourse">Get the
+                    Course</button>
+            </div>
+        </div>
+        <script>
+        document.getElementById("htmlcourseokay").addEventListener("click", function() {
+            document.getElementById("htmlCoursePopup").style.display = "block";
+        });
+
+        document.getElementById("closeHTMLCoursePopup").addEventListener("click", function() {
+            document.getElementById("htmlCoursePopup").style.display = "none";
+        });
+
+        document.getElementById("getHTMLCourse").addEventListener("click", function() {
+            document.getElementById("htmlCoursePopup").style.display = "none";
+        });
+
+        document.getElementById("csscourseokay").addEventListener("click", function() {
+            document.getElementById("cssCoursePopup").style.display = "block";
+        });
+
+        document.getElementById("closeCSSCoursePopup").addEventListener("click", function() {
+            document.getElementById("cssCoursePopup").style.display = "none";
+        });
+
+        document.getElementById("getCSSCourse").addEventListener("click", function() {
+            document.getElementById("cssCoursePopup").style.display = "none";
+        });
+
+        document.getElementById("jscourseokay").addEventListener("click", function() {
+            document.getElementById("jsCoursePopup").style.display = "block";
+        });
+
+        document.getElementById("closeJSCoursePopup").addEventListener("click", function() {
+            document.getElementById("jsCoursePopup").style.display = "none";
+        });
+
+        document.getElementById("getJSCourse").addEventListener("click", function() {
+            document.getElementById("jsCoursePopup").style.display = "none";
+        });
+
+        document.getElementById("ccourseokay").addEventListener("click", function() {
+            document.getElementById("cProgrammingCoursePopup").style.display = "block";
+        });
+
+        document.getElementById("closeCProgrammingCoursePopup").addEventListener("click", function() {
+            document.getElementById("cProgrammingCoursePopup").style.display = "none";
+        });
+
+        document.getElementById("getCProgrammingCourse").addEventListener("click", function() {
+            document.getElementById("cProgrammingCoursePopup").style.display = "none";
+        });
+
+        window.addEventListener("click", function(event) {
+            var htmlCoursePopup = document.getElementById("htmlCoursePopup");
+            var cssCoursePopup = document.getElementById("cssCoursePopup");
+            var jsCoursePopup = document.getElementById("jsCoursePopup");
+            var cProgrammingCoursePopup = document.getElementById("cProgrammingCoursePopup");
+            if (event.target == htmlCoursePopup) {
+                htmlCoursePopup.style.display = "none";
+            }
+            if (event.target == cssCoursePopup) {
+                cssCoursePopup.style.display = "none";
+            }
+            if (event.target == jsCoursePopup) {
+                jsCoursePopup.style.display = "none";
+            }
+            if (event.target == cProgrammingCoursePopup) {
+                cProgrammingCoursePopup.style.display = "none";
+            }
+        });
+    </script>
+
+        <!-- ths is for html  -->
+
+        <!-- 
+          - #STATE
+        -->
+
+        <footer class="footer">
+            <div class="footer-container">
+                <p class="footer-text">&copy; 2024 Learners Froge. All rights
+                    reserved.
+                </p>
+            </div>
+        </footer>
+
+        <!-- 
+    - #BACK TO TOP
+  -->
+
+        <a href="#top" class="back-top-btn" aria-label="back top top"
+            data-back-top-btn>
+            <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+        </a>
+
+        <!-- 
+- custom js link
+-->
+        <script src="../../assets/js/script.js" defer></script>
+
+        <!-- 
+- ionicon link
+-->
+        <script type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,153 @@
+/* Careers Hero Section Styles */
+
+.careers-hero {
+    position: relative;
+    /* Ensure proper positioning of overlay */
+    background-image: url('team.jpg');
+    /* Replace 'your-background-image.jpg' with your image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.careers-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.598);
+    /* Adjust opacity here */
+}
+
+.careers-hero-content {
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+}
+
+.careers-hero-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.careers-hero-subtitle {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.careers-hero-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff6b6b;
+    /* Adjust button color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.careers-hero-btn:hover {
+    background-color: #e64c4c;
+    /* Adjust button hover color */
+}
+
+
+/* Job Openings Section Styles */
+
+.job-openings {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.containerr {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.job-card {
+    display: flex;
+    align-items: center;
+}
+
+.job-image {
+    width: 200px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.job-details {
+    flex-grow: 1;
+}
+
+.job-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.job-location,
+.job-type {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.job-apply-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.job-apply-btn:hover {
+    background-color: #e64c4c;
+}
+
+.job-description {
+    text-align: center;
+}
+
+.job-description-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.job-description-subtitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.job-description-text {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* Footer Styles */
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 14px;
+}
