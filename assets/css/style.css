@@ -741,6 +741,7 @@ body {
 .video {
     background-size: contain;
     background-position: center top;
+    margin-bottom: 10rem;
 }
 
 .video-banner {
@@ -1551,6 +1552,8 @@ body {
 
 .footer-content {
     display: flex;
+    flex-wrap: wrap;
+    /* Allow content to wrap */
     align-items: center;
     justify-content: space-between;
 }
@@ -1562,6 +1565,10 @@ body {
 .footer-slogan {
     font-size: 18px;
     margin-bottom: 20px;
+    text-align: center;
+    /* Center align slogan on smaller screens */
+    flex-basis: 100%;
+    /* Full width for smaller screens */
 }
 
 .contact-info p {
@@ -1569,56 +1576,37 @@ body {
     margin-bottom: 10px;
 }
 
-.social-icons .social-icon {
+.social-iconss {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    /* Add space between contact info and social icons */
+    text-align: center;
+    /* Center align social icons */
+    flex-basis: 100%;
+    /* Full width for smaller screens */
+}
+
+.social-iconss .social-icons {
     color: #fff;
     font-size: 24px;
     margin-left: 10px;
     transition: color 0.3s ease;
 }
 
-.social-icons .social-icon:hover {
+.social-iconss .social-icons:hover {
     color: #ff6b6b;
 }
 
 
-/* banner */
+/* Responsive Styles */
 
-
-/* Banner Section Styles */
-
-.banner {
-    background-color: #f9f9f9;
-    padding: 100px 0;
-    text-align: center;
-}
-
-.banner-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.banner-title {
-    font-size: 36px;
-    margin-bottom: 5px;
-}
-
-.banner-description {
-    font-size: 21px;
-    color: #666;
-    margin-bottom: 10px;
-}
-
-.banner-button {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    font-size: 18px;
-    padding: 12px 24px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.banner-button:hover {
-    background-color: #0056b3;
+@media screen and (min-width: 768px) {
+    .footer-slogan,
+    .social-iconss {
+        flex-basis: auto;
+        /* Revert flex-basis for larger screens */
+        text-align: center;
+        /* Align content to the left for larger screens */
+    }
 }
