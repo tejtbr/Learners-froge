@@ -22,7 +22,7 @@
     - custom css link
   -->
         <link rel="stylesheet" href="../../assets/css/style.css">
-        <link rel="stylesheet" href="career.css">
+        <link rel="stylesheet" href="contact.css">
         <link rel="stylesheet" href="../../assets/css/popup.css">
 
         <!-- 
@@ -49,6 +49,92 @@
 
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        <style>
+        /* Your CSS styles for the Learners Forge website can go here */
+        /* I'm assuming you have some styles for headers, buttons, and container elements */
+        /* Additional styles specific to the verification page */
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .verification-container {
+            max-width: 600px;
+            margin: 150px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .verification-container h2 {
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        
+        .verification-container input[type="text"] {
+            padding: 10px;
+            width: 80%;
+            margin-bottom: 20px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+        
+        .verification-container button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .verification-container button:hover {
+            background-color: #0056b3;
+        }
+        
+        .verification-result {
+            margin-top: 20px;
+            font-size: 18px;
+            text-align: left;
+            padding: 20px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+        }
+        /* Footer styles */
+        
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        /* Responsive Styles */
+        
+        @media (max-width: 768px) {
+            .verification-container {
+                max-width: 80%;
+                margin: 150px auto;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .verification-container {
+                max-width: 90%;
+                margin: 150px auto;
+            }
+        }
+    </style>
 
     </head>
 
@@ -88,7 +174,7 @@
         <header class="header" data-header>
             <div class="container">
 
-                <a href="../../index.html" class="logo">
+                <a href="#" class="logo">
                     <img src="../../assets/images/logos .png" width="162"
                         height="50" alt="EduWeb logo">
                 </a>
@@ -96,7 +182,7 @@
                 <nav class="navbar" data-navbar>
 
                     <div class="wrapper">
-                        <a href="#" class="logo">
+                        <a href="../../index.html" class="logo">
                             <img src="../../assets/images/logos .png"
                                 width="162" height="50" alt="EduWeb logo">
                         </a>
@@ -135,8 +221,7 @@
                                 class="navbar-link" data-nav-link>Contact</a>
                         </li>
                         <li class="navbar-item">
-                            <a href="../certificate/athentcation.html"
-                                class="navbar-link" data-nav-link>Verify
+                            <a href="#" class="navbar-link" data-nav-link>Verify
                                 Certificate</a>
                         </li>
 
@@ -188,64 +273,56 @@
 
             </div>
         </header>
+        <title>Learners Forge - Certificate Verification</title>
 
-        <section class="careers-hero">
-            <div class="careers-hero-overlay"></div>
-            <div class="careers-hero-content">
-                <h1 class="careers-hero-title">Join Our Team</h1>
-                <p class="careers-hero-subtitle">Explore exciting career
-                    opportunities with us</p>
-                <a href="#jobs" class="btn careers-hero-btn">View
-                    Openings</a>
-            </div>
-        </section>
+        <!-- Main content section -->
+        <div class="verification-container">
+            <h2>Certificate Verification</h2>
+            <input type="text" id="certificateCode"
+                placeholder="Enter Certificate Code">
+            <button onclick="verifyCertificate()">Verify</button>
+            <div id="certificateDetails" class="verification-result"></div>
+        </div>
 
-        <section class="job-openings" id="jobs">
-            <div class="containerr">
-                <div class="job-card">
-                    <img src="campus.jpg" alt="Job Image" class="job-image">
-                    <div class="job-details">
-                        <h2 class="job-title">Trainee Engineer</h2>
-                        <p class="job-location">Location: Remote</p>
-                        <p class="job-type">Type: Part-time</p>
-                        <a href="https://forms.gle/ovdzdoUCTZUBqyvW6"
-                            class="btn job-apply-btn">Apply Now</a>
-                    </div>
-                </div>
-                <div class="job-card">
-                    <img src="../course/pexels-armin-rimoldi-5553638.jpg"
-                        alt="Job Image" class="job-image">
-                    <div class="job-details">
-                        <h2 class="job-title">Campus Ambassador</h2>
-                        <p class="job-location">Location: Remote</p>
-                        <p class="job-type">Type: Part-time</p>
-                        <a href="https://forms.gle/ovdzdoUCTZUBqyvW6"
-                            class="btn job-apply-btn">Apply Now</a>
-                    </div>
-                </div>
-                <div class="job-description">
-                    <h2 class="job-description-title">Join Our Team</h2>
-                    <p class="job-description-subtitle">Exciting Opportunities
-                        Await!
-                    </p>
-                    <p class="job-description-text">Join our team and be a part
-                        of a dynamic, innovative company! We offer a
-                        collaborative work environment, opportunities for
-                        growth, and a chance to make a real impact. Whether
-                        you're a seasoned professional or just starting your
-                        career
-                        journey, we have opportunities for you. Apply now and
-                        embark on a fulfilling career with us!</p>
-                </div>
+        <script>
+        function verifyCertificate() {
+            var certificateCode = document.getElementById("certificateCode").value;
 
-            </div>
-        </section>
+            // Load certificate details from JSON file
+            fetch('numbers.json')
+                .then(response => response.json())
+                .then(data => {
+                    var certificates = data.certificates;
+                    var certificateDetails = '';
+                    var isVerified = false;
 
-        <!-- ths is for html  -->
+                    // Check if certificate code exists in the JSON data
+                    certificates.forEach(cert => {
+                        if (cert.code === certificateCode) {
+                            isVerified = true;
+                            certificateDetails += `<p><strong>Certificate Code:</strong> ${cert.code}</p>`;
+                            certificateDetails += `<p><strong>Name:</strong> ${cert.name}</p>`;
+                            certificateDetails += `<p><strong>Course:</strong> ${cert.course}</p>`;
+                            certificateDetails += `<p><strong>Date:</strong> ${cert.date}</p>`;
+                            return;
+                        }
+                    });
 
-        <!-- 
-          - #STATE
-        -->
+                    // Display verification result and certificate details
+                    var resultElement = document.getElementById("certificateDetails");
+                    if (isVerified) {
+                        resultElement.innerHTML = "<p>Certificate is valid!</p>" + certificateDetails;
+                        resultElement.style.color = "#28a745"; // Green color for success
+                    } else {
+                        resultElement.innerHTML = "<p>Certificate is invalid!</p>";
+                        resultElement.style.color = "#dc3545"; // Red color for failure
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+    </script>
 
         <footer class="footer">
             <div class="footer-container">
@@ -256,8 +333,8 @@
         </footer>
 
         <!-- 
-    - #BACK TO TOP
-  -->
+- #BACK TO TOP
+-->
 
         <a href="#top" class="back-top-btn" aria-label="back top top"
             data-back-top-btn>

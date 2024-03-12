@@ -1,0 +1,17 @@
+{
+    "certificates": [{
+            "code": "ABC123",
+            "name": "John Doe",
+            "course": "Web Development",
+            "date": "2024-03-12",
+            "verified": true
+        },
+        {
+            "code": "XYZ456",
+            "name": "Jane Smith",
+            "course": "Data Science",
+            "date": "2024-03-10",
+            "verified": false
+        }
+    ]
+}
